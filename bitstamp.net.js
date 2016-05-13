@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name Bitstamp menus
-// @namespace https://github.com/lucianf/greasemonkey
+// @namespace lucianf/greasemonkey
 // @include https://www.bitstamp.net/*
 // @version 1.0
 // @downloadURL https://raw.githubusercontent.com/lucianf/greasemonkey/master/bitstamp.net.js

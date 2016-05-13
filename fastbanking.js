@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name FastBanking defaults
-// @namespace lucianf/greasemonkey/fastbanking
+// @namespace lucianf/greasemonkey
 // @include https://fastbanking.bancpost.ro/*
 // @require https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
-// @version 0.4
+// @version 1.0
 // @downloadURL https://raw.githubusercontent.com/lucianf/greasemonkey/master/fastbanking.js
 // ==/UserScript==
 
