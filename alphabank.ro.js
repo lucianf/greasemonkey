@@ -9,8 +9,11 @@
 var pathname = window.location.pathname;
 
 var prepareScreen = function () {
-    $('.ui-state-default').click();
-    $('input[name="fldOTP"]').focus();
+    //$('.ui-state-default').click();
+    $("#warning").dialog("close");
+
+    //$('input[name="fldOTP"]').focus();
+    document.frmLogon.fldOTP.focus();
 };
 
 if (pathname == "/corporate/CorpOTPLoginLangRom.jsp") {
