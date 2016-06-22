@@ -1,8 +1,10 @@
 // ==UserScript==
 // @name Cryptowatch Free trial
 // @namespace lucianf/greasemonkey
-// @include https://cryptowat.ch/*
-// @version 1.1
+// @version 1.2
+// @description Hides trial section
+// @author Lucian Fratila
+// @match https://cryptowat.ch/*
 // @downloadURL https://raw.githubusercontent.com/lucianf/greasemonkey/master/cryptowat.ch.js
 // ==/UserScript==
 

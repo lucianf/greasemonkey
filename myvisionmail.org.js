@@ -1,9 +1,11 @@
 // ==UserScript==
 // @name MyVisionMail AutoLogin
 // @namespace lucianf/greasemonkey
-// @include https://myvisionmail.org/
+// @version 1.1
+// @description Auto login
+// @author Lucian Fratila
+// @match https://myvisionmail.org/
 // @require https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
-// @version 1.0
 // @downloadURL https://raw.githubusercontent.com/lucianf/greasemonkey/master/myvisionmail.org.js
 // ==/UserScript==
 

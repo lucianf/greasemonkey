@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name       DataFileHost Uncheck Download Manager
 // @namespace  techietrash/datafilehost
-// @version    0.2
+// @version    0.3
 // @description  Unchecks Download Manager then downloads file.
-// @include    http://www.datafilehost.com/d/*
+// @match    http://www.datafilehost.com/d/*
 // @downloadURL https://raw.githubusercontent.com/lucianf/greasemonkey/master/datafilehost.com.js
 // @copyright  techietrash (CC BY-NC 3.0) 2013, Creative Commons Attribution-NonCommercial 3.0 Unported 
 // ==/UserScript==

@@ -1,9 +1,11 @@
 // ==UserScript==
 // @name FastBanking defaults
 // @namespace lucianf/greasemonkey
-// @include https://fastbanking.bancpost.ro/*
+// @version 1.2
+// @description Fast fwd through initial nav 
+// @author Lucian Fratila
+// @match https://fastbanking.bancpost.ro/*
 // @require https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
-// @version 1.0
 // @downloadURL https://raw.githubusercontent.com/lucianf/greasemonkey/master/fastbanking.js
 // ==/UserScript==
 

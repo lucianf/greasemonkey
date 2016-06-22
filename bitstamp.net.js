@@ -1,8 +1,10 @@
 // ==UserScript==
 // @name Bitstamp menus
 // @namespace lucianf/greasemonkey
-// @include https://www.bitstamp.net/*
-// @version 1.0
+// @version 1.1
+// @description Adds frequently used functions (orders/accbal/txns) to main nav menu
+// @author Lucian Fratila
+// @match https://www.bitstamp.net/*
 // @downloadURL https://raw.githubusercontent.com/lucianf/greasemonkey/master/bitstamp.net.js
 // ==/UserScript==
 

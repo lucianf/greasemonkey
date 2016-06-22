@@ -1,8 +1,10 @@
 // ==UserScript==
 // @name Alpha Bank defaults
 // @namespace lucianf/greasemonkey
-// @include https://secure*.alphabank.ro/*
-// @version 1.0
+// @version 1.1
+// @description Dismisses initial popup and focuses OTP field
+// @author Lucian Fratila
+// @match https://secure*.alphabank.ro/*
 // @downloadURL https://raw.githubusercontent.com/lucianf/greasemonkey/master/alphabank.ro.js
 // ==/UserScript==
 

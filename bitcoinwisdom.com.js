@@ -1,9 +1,11 @@
 // ==UserScript==
 // @name BitcoinWisdom Ad Bar
 // @namespace lucianf/greasemonkey
-// @include https://bitcoinwisdom.com/*
+// @version 1.1
+// @description Hides the ad bar
+// @author Lucian Fratila
+// @match https://bitcoinwisdom.com/*
 // @require https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
-// @version 1.0
 // @downloadURL https://raw.githubusercontent.com/lucianf/greasemonkey/master/bitcoinwisdom.com.js
 // ==/UserScript==
 
