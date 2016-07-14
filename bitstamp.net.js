@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Bitstamp menus
 // @namespace lucianf/greasemonkey
-// @version 1.1
+// @version 1.2
 // @description Adds frequently used functions (orders/accbal/txns) to main nav menu
 // @author Lucian Fratila
 // @match https://www.bitstamp.net/*
@@ -54,7 +54,7 @@ if (['/account/orders/', '/account/transactions/', '/account/balance/', '/accoun
 }
 
 if (links) {
-  var toAppend=$()
+  var toAppend=$();
 
   $.each(links, function(i, e) {
     link = links[i][0];
@@ -62,7 +62,7 @@ if (links) {
     toAppend = toAppend.add(
       $('<li>').append(
         $('<a>').attr('href',link).attr('class', 'template_toogle_class').attr('id', 'template_text').append(title+"\n<span> </span>")
-    ))
+    ));
   });
 
   $('ul[class="default_menu"]').append(toAppend);
