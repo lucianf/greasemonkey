@@ -17,7 +17,7 @@ var prepareScreen = function () {
 
 var submitLogin = function () {
     $('button.btn-green').click();
-}
+};
 
 if (pathname == "/") {
     window.setTimeout(prepareScreen, 1000);
