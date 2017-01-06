@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name Bitfinex auto login
+// @name Bitfinex misc
 // @namespace lucianf/greasemonkey
-// @version 1.1
-// @description Auto login
+// @version 1.2
+// @description Auto login and interface cleanup
 // @author Lucian Fratila
-// @include https://www.bitfinex.com/
+// @match https://www.bitfinex.com/*
 // @downloadURL https://raw.githubusercontent.com/lucianf/greasemonkey/master/bitfinex.com.js
 // ==/UserScript==
 
 var pathname = window.location.pathname;
 
-var prepareScreen = function () {
+var prepareScreenLogin = function () {
     loadStandardLoginForm();
     window.setTimeout(submitLogin, 500);
 };
@@ -19,6 +19,18 @@ var submitLogin = function () {
     $('button.btn-green').click();
 };
 
+var prepareScreenTrading = function () {
+    // remove tradingview branding
+    $("iframe[id^='tradingview']").contents().find(".onchart-tv-logo.wrapper.expanded").hide();
+    $("iframe[id^='tradingview']").contents().find(".tv-side-toolbar").hide();
+};
+
+console.log(pathname);
+
 if (pathname == "/") {
-    window.setTimeout(prepareScreen, 1000);
+    window.setTimeout(prepareScreenLogin, 1000);
+}
+
+if (pathname.startsWith("/trading")) {
+    window.setTimeout(prepareScreenTrading, 5000);
 }
