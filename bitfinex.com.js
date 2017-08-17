@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Bitfinex misc
 // @namespace lucianf/greasemonkey
-// @version 1.3
+// @version 1.3.1
 // @description Auto login and interface cleanup
 // @author Lucian Fratila
 // @match https://www.bitfinex.com/*
@@ -22,9 +22,12 @@ var submitLogin = function () {
 var prepareScreenTrading = function () {
     // remove tradingview branding
     $("iframe[id^='tradingview']").contents().find(".onchart-tv-logo.wrapper.expanded").hide();
-    $("iframe[id^='tradingview']").contents().find(".tv-side-toolbar").hide();
-    // shorten move alert
-    I18n.alerts.price="[PAIR] move [UPDOWN] [PRICE]";
+
+    // hide drawing tools
+    //$("iframe[id^='tradingview']").contents().find(".tv-side-toolbar").hide();
+
+    // rewrite some messages
+    I18n.alerts.price="[PAIR] move [UPDOWN] [PRICE]"; // shorten move alert
 };
 
 console.log(pathname);
