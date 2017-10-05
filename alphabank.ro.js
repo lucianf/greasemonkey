@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Alpha Bank defaults
 // @namespace lucianf/greasemonkey
-// @version 1.2
+// @version 1.3
 // @description Dismisses initial popup and focuses OTP field
 // @author Lucian Fratila
 // @include https://secure*.alphabank.ro/*
@@ -16,6 +16,8 @@ var prepareScreen = function () {
 
     //$('input[name="fldOTP"]').focus();
     document.frmLogon.fldOTP.focus();
+
+    flag = 1; // disable warning popup
 };
 
 if (pathname == "/corporate/CorpOTPLoginLangRom.jsp") {
