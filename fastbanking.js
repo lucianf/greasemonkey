@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name FastBanking defaults
 // @namespace lucianf/greasemonkey
-// @version 1.3
+// @version 1.4
 // @description Fast fwd through initial nav
 // @author Lucian Fratila
 // @match https://fastbanking.bancpost.ro/*
@@ -20,17 +20,20 @@ if (pathname == "/iBankWeb/login.jsp") {
     return;
 }
 
+/* apparently no longer valid
 if (pathname == "/iBankWeb/index.jsp" && GM_getValue("fbjumpflag") == 1) {
     // choose account
     $('form[name="choose"]').submit();
     return;
 }
+*/
 
 if (pathname == "/iBankWeb/home/index.do" && GM_getValue("fbjumpflag") == 1) {
     // coming straight from login, trigger token auth
     //GM_deleteValue("fbjumpflag");
     GM_setValue("fbjumpflag", 0);
-    window.location.href = "https://fastbanking.bancpost.ro/iBankWeb/accounts/ListBalanceAccounts.do";
+    //window.location.href = "https://fastbanking.bancpost.ro/iBankWeb/accounts/ListBalanceAccounts.do";
+    $('form[name="choose"]').submit();
     return;
 }
 
